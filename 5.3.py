@@ -14,7 +14,7 @@ MORSE_CODE_DICT = {
 }
 
 # GPIO pin for the LED
-LED_PIN = 17
+LED_PIN = 21
 
 # Function to blink the LED using Morse code
 def blink_morse_code(word):
@@ -50,12 +50,16 @@ root.title("Morse Code Blinker")
 
 label = tk.Label(root, text="Enter a word (max 12 characters):")
 label.pack()
-
 entry = tk.Entry(root)
 entry.pack()
-
 button = tk.Button(root, text="Blink Morse Code", command=on_button_click)
-button.pack()
+button.pack() 
+
+
+label3 = tk.Label(root, text="Samridh Mahajan")
+label3.pack()
+label2 = tk.Label(root, text="2210994834")
+label2.pack()
 
 root.mainloop()
 
